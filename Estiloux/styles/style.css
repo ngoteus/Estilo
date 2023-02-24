@@ -9,11 +9,38 @@ body {
    font-family: 'Quicksand', sans-serif;
    color: grey;
 }
-  container-grid {
+  .container-grid {
     width: 80%;
-    margin: 0 auto;
-    background-color: purple;
+    margin:  auto;
+    
 }
+
+main .column-flex {
+    display: flex;
+    justify-content: space-between;
+}
+main .coluna1{
+    width: 75%;
+    background-color: rgb(65, 225, 161);
+}
+main .coluna1 #lapis {
+    width: 100%;
+}
+main .coluna2{
+    width: 20%;
+    background-color: royalblue;
+}
+
+main .coluna1 p {
+    margin-top: 15px; 
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+
+
+
 
 /* Cabeçalho */
 header {
@@ -23,11 +50,12 @@ header {
 header .header-flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 header h1 {
     color: white;
     font-weight: 300;
-    border: 2px solid white;
+   
     
 }
 header h1 #logoux{
@@ -35,9 +63,6 @@ header h1 #logoux{
     font-style: italic;
 }
 
- header a {
-     color: red;
- }
  
  header nav a {
      color: white;
@@ -55,4 +80,9 @@ header h1 #logoux{
     margin: 20px;
     margin: 20px 10px 20px 10px;
  }
-
+ header nav {
+     width: 200px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
